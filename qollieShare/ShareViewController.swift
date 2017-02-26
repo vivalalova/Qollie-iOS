@@ -16,48 +16,43 @@ class LOViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if let item = extensionContext?.inputItems.first as? NSExtensionItem, let itemProvider = item.attachments?.first as? NSItemProvider {
+            if itemProvider.hasItemConformingToTypeIdentifier("public.url") {
 
-        if let item = extensionContext?.inputItems.first as? NSExtensionItem {
-            if let itemProvider = item.attachments?.first as? NSItemProvider {
+                itemProvider.loadItem(forTypeIdentifier: "public.url", options: nil, completionHandler: { (url, err) in
 
-                if itemProvider.hasItemConformingToTypeIdentifier("public.url") {
+                    if let url = url as? NSURL {
+//                            url.host
+                        print(url.absoluteString ?? "")
+                    }
+                })
+            } else if itemProvider.hasItemConformingToTypeIdentifier("public.plain-text") {
+                itemProvider.loadItem(forTypeIdentifier: "public.plain-text", options: nil, completionHandler: { (text, err) in
+                    if let text = text as? String {
+                        print(text)
+                        let array = text.components(separatedBy: "-")
 
-                    itemProvider.loadItem(forTypeIdentifier: "public.url", options: nil, completionHandler: { (url, err) in
-
-                        if let url = url as? NSURL {
-                            print(url.absoluteString ?? "")
-                        }
-                        //                        self.extensionContext?.completeRequest(returningItems: [], completionHandler: nil)
-                    })
-                }
-
-                if itemProvider.hasItemConformingToTypeIdentifier("public.plain-text") {
-                    itemProvider.loadItem(forTypeIdentifier: "public.plain-text", options: nil, completionHandler: { (text, err) in
-                        if let text = text as? String {
-                            print(text)
-                            let array = text.components(separatedBy: "-")
-
-                            if array.count == 2 {
-                                let company = array[0]
+                        if array.count == 2 {
+                            let company = array[0]
 //                                let job = array [1]
 
-                                if let encodeCompany = company.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed),
-                                    let url = URL(string: "https://www.qollie.com/search?keyword=\(encodeCompany)&kind=company") {
+                            if let encodeCompany = company.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed),
+                                let url = URL(string: "https://www.qollie.com/search?keyword=\(encodeCompany)&kind=company") {
 
-                                        print(url.absoluteString)
-                                        let safari = SFSafariViewController(url: url)
-                                        safari.delegate = self
-                                        self.present(safari, animated: true, completion: nil)
-                                } else {
-
-                                }
+                                    print(url.absoluteString)
+                                    let safari = SFSafariViewController(url: url)
+                                    safari.delegate = self
+                                    self.present(safari, animated: true, completion: nil)
                             } else {
 
                             }
+                        } else {
+
                         }
-                    })
-                }
+                    }
+                })
             }
+
         }
     }
 
