@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Crashlytics
 
 class ViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var scrollView: UIScrollView!
@@ -15,6 +16,8 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         scrollView.delegate = self
+        
+        Answers.logCustomEvent(withName: "打開APP耶", customAttributes: nil)
     }
 
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {

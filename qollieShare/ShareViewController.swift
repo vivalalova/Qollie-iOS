@@ -14,12 +14,12 @@ class LOViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         guard let item = extensionContext?.inputItems.first as? NSExtensionItem, let itemProvider = item.attachments?.first as? NSItemProvider else {
             self.alert(message: "哎呀? 請在104 APP內使用喔")
             return
         }
-        
+
         if itemProvider.hasItemConformingToTypeIdentifier("public.plain-text") {
             itemProvider.loadItem(forTypeIdentifier: "public.plain-text", options: nil, completionHandler: { (text, err) in
                 guard let text = text as? String else {
@@ -55,7 +55,7 @@ class LOViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "確定", style: .cancel) { action in
             self.dismiss()
         })
-        
+
         self.present(alert, animated: true, completion: nil)
     }
 

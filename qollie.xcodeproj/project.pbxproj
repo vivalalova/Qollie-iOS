@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14B3227D602A5F93B1809BDB /* Pods_qollieShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBF3BBD03306CA1BAC9ADC4 /* Pods_qollieShare.framework */; };
 		9E23BAB21E6357F1006434B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E23BAB11E6357F1006434B1 /* AppDelegate.swift */; };
 		9E23BAB41E6357F1006434B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E23BAB31E6357F1006434B1 /* ViewController.swift */; };
 		9E23BAB71E6357F1006434B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E23BAB51E6357F1006434B1 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 		9E23BACA1E63582D006434B1 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E23BAC91E63582D006434B1 /* ShareViewController.swift */; };
 		9E23BACD1E63582D006434B1 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E23BACB1E63582D006434B1 /* MainInterface.storyboard */; };
 		9E23BAD11E63582D006434B1 /* qollieShare.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9E23BAC71E63582D006434B1 /* qollieShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B0C7435E856E0C147D7AEFDB /* Pods_qollie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4293DD73EE00F4D85BE4FF50 /* Pods_qollie.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3A86E5C0F2C20AE34F9A55DC /* Pods-qollie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qollie.release.xcconfig"; path = "Pods/Target Support Files/Pods-qollie/Pods-qollie.release.xcconfig"; sourceTree = "<group>"; };
+		3FBF3BBD03306CA1BAC9ADC4 /* Pods_qollieShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_qollieShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4293DD73EE00F4D85BE4FF50 /* Pods_qollie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_qollie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		667E59CBF94CC72574CDCD68 /* Pods-qollieShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qollieShare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-qollieShare/Pods-qollieShare.debug.xcconfig"; sourceTree = "<group>"; };
 		9E23BAAE1E6357F1006434B1 /* qollie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qollie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E23BAB11E6357F1006434B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E23BAB31E6357F1006434B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +59,8 @@
 		9E23BAC91E63582D006434B1 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		9E23BACC1E63582D006434B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		9E23BACE1E63582D006434B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C43902D9AF0B5C43693ECB50 /* Pods-qollie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qollie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-qollie/Pods-qollie.debug.xcconfig"; sourceTree = "<group>"; };
+		FEEA1DC301118E11E32F097C /* Pods-qollieShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qollieShare.release.xcconfig"; path = "Pods/Target Support Files/Pods-qollieShare/Pods-qollieShare.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0C7435E856E0C147D7AEFDB /* Pods_qollie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,18 +76,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14B3227D602A5F93B1809BDB /* Pods_qollieShare.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42478A825B453510B0FF55C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4293DD73EE00F4D85BE4FF50 /* Pods_qollie.framework */,
+				3FBF3BBD03306CA1BAC9ADC4 /* Pods_qollieShare.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		97AE6DE5CA5845206E33DE9B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C43902D9AF0B5C43693ECB50 /* Pods-qollie.debug.xcconfig */,
+				3A86E5C0F2C20AE34F9A55DC /* Pods-qollie.release.xcconfig */,
+				667E59CBF94CC72574CDCD68 /* Pods-qollieShare.debug.xcconfig */,
+				FEEA1DC301118E11E32F097C /* Pods-qollieShare.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9E23BAA51E6357F1006434B1 = {
 			isa = PBXGroup;
 			children = (
 				9E23BAB01E6357F1006434B1 /* qollie */,
 				9E23BAC81E63582D006434B1 /* share extension */,
 				9E23BAAF1E6357F1006434B1 /* Products */,
+				97AE6DE5CA5845206E33DE9B /* Pods */,
+				42478A825B453510B0FF55C2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,10 +154,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9E23BAC01E6357F1006434B1 /* Build configuration list for PBXNativeTarget "qollie" */;
 			buildPhases = (
+				728E6AB51F9B8672EABDFFD4 /* [CP] Check Pods Manifest.lock */,
 				9E23BAAA1E6357F1006434B1 /* Sources */,
 				9E23BAAB1E6357F1006434B1 /* Frameworks */,
 				9E23BAAC1E6357F1006434B1 /* Resources */,
 				9E23BAD51E63582D006434B1 /* Embed App Extensions */,
+				9E23BAD71E639957006434B1 /* ShellScript */,
+				9E35FE91ABA2953B562FCBAD /* [CP] Embed Pods Frameworks */,
+				0EF4699C50C30773196135DE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -141,9 +177,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9E23BAD21E63582D006434B1 /* Build configuration list for PBXNativeTarget "qollieShare" */;
 			buildPhases = (
+				ADD8F45AB51AD1B5BBC1E289 /* [CP] Check Pods Manifest.lock */,
 				9E23BAC31E63582D006434B1 /* Sources */,
 				9E23BAC41E63582D006434B1 /* Frameworks */,
 				9E23BAC51E63582D006434B1 /* Resources */,
+				F203B0F2FC5DBE652DF07A9D /* [CP] Copy Pods Resources */,
+				9E23BAD81E639B9B006434B1 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -215,6 +254,110 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EF4699C50C30773196135DE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-qollie/Pods-qollie-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		728E6AB51F9B8672EABDFFD4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9E23BAD71E639957006434B1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" ae32a781ec002f65fd6900f49c380cfbd17c7b86 09bcff82aded0899fc4aa8ed539984fd3275dc66aa2bbb4e306718c01aba3668";
+		};
+		9E23BAD81E639B9B006434B1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" ae32a781ec002f65fd6900f49c380cfbd17c7b86 09bcff82aded0899fc4aa8ed539984fd3275dc66aa2bbb4e306718c01aba3668";
+		};
+		9E35FE91ABA2953B562FCBAD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-qollie/Pods-qollie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADD8F45AB51AD1B5BBC1E289 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F203B0F2FC5DBE652DF07A9D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-qollieShare/Pods-qollieShare-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9E23BAAA1E6357F1006434B1 /* Sources */ = {
@@ -367,6 +510,7 @@
 		};
 		9E23BAC11E6357F1006434B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C43902D9AF0B5C43693ECB50 /* Pods-qollie.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -382,6 +526,7 @@
 		};
 		9E23BAC21E6357F1006434B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A86E5C0F2C20AE34F9A55DC /* Pods-qollie.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -397,6 +542,7 @@
 		};
 		9E23BAD31E63582D006434B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 667E59CBF94CC72574CDCD68 /* Pods-qollieShare.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 7T6Y9LETK9;
 				INFOPLIST_FILE = qollieShare/Info.plist;
@@ -411,6 +557,7 @@
 		};
 		9E23BAD41E63582D006434B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEEA1DC301118E11E32F097C /* Pods-qollieShare.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 7T6Y9LETK9;
 				INFOPLIST_FILE = qollieShare/Info.plist;
