@@ -12,92 +12,79 @@ import SafariServices
 
 class LOViewController: UIViewController {
 
-    @IBOutlet weak var webview: UIWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if let item = extensionContext?.inputItems.first as? NSExtensionItem, let itemProvider = item.attachments?.first as? NSItemProvider {
-            if itemProvider.hasItemConformingToTypeIdentifier("public.url") {
-
-                itemProvider.loadItem(forTypeIdentifier: "public.url", options: nil, completionHandler: { (url, err) in
-
-                    if let url = url as? NSURL {
-//                            url.host
-                        print(url.absoluteString ?? "")
-                    }
-                })
-            } else if itemProvider.hasItemConformingToTypeIdentifier("public.plain-text") {
-                itemProvider.loadItem(forTypeIdentifier: "public.plain-text", options: nil, completionHandler: { (text, err) in
-                    if let text = text as? String {
-                        print(text)
-                        let array = text.components(separatedBy: "-")
-
-                        if array.count == 2 {
-                            let company = array[0]
-//                                let job = array [1]
-
-                            if let encodeCompany = company.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed),
-                                let url = URL(string: "https://www.qollie.com/search?keyword=\(encodeCompany)&kind=company") {
-
-                                    print(url.absoluteString)
-                                    let safari = SFSafariViewController(url: url)
-                                    safari.delegate = self
-                                    self.present(safari, animated: true, completion: nil)
-                            } else {
-
-                            }
-                        } else {
-
-                        }
-                    }
-                })
-            }
-
+        guard let item = extensionContext?.inputItems.first as? NSExtensionItem, let itemProvider = item.attachments?.first as? NSItemProvider else {
+            self.alert(message: "哎呀? 意外地不能使用")
+            return
         }
-    }
 
-    @IBAction func dismiss(_ sender: UIButton) {
-        self.extensionContext?.completeRequest(returningItems: nil, completionHandler: nil)
-    }
+//        if itemProvider.hasItemConformingToTypeIdentifier("public.url") {
+//            itemProvider.loadItem(forTypeIdentifier: "public.url", options: nil, completionHandler: { (url, err) in
+//                guard let url = url as? URL else {
+//                    self.alert(message: "我們不支援從瀏覽器開啟喔,請使用104 APP")
+//                    return
+//                }
+//                //url.host
+//                //https://m.104.com.tw/job/5b00o?jobsource=m104_hotorder
+//
+//                self.handle(url: url)
+//
+//            })
+//        } else
 
-    open func isContentValid() -> Bool {
-        // Do validation of contentText and/or NSExtensionContext attachments here
-        return true
-    }
-
-    open func didSelectPost() {
-
-        if let item = extensionContext?.inputItems.first as? NSExtensionItem {
-
-
-            if let itemProvider = item.attachments?.first as? NSItemProvider {
-
-                if itemProvider.hasItemConformingToTypeIdentifier("public.url") {
-
-                    itemProvider.loadItem(forTypeIdentifier: "public.url", options: nil, completionHandler: { (url, err) in
-
-                        if (url as? NSURL) != nil {
-                            UserDefaults.standard.set(url, forKey: "URLArrayValue")
-                            print("!!!!")
-                        }
-
-                        self.extensionContext?.completeRequest(returningItems: [], completionHandler: nil)
-                    })
+        if itemProvider.hasItemConformingToTypeIdentifier("public.plain-text") {
+            itemProvider.loadItem(forTypeIdentifier: "public.plain-text", options: nil, completionHandler: { (text, err) in
+                guard let text = text as? String else {
+                    self.alert(message: "請在104 APP內使用喔")
+                    return
                 }
-            }
+
+                self.handle(text: text)
+            })
         }
+    }
+
+    func handle(url: URL) {
+        print(url.absoluteString)
 
     }
 
-    open func configurationItems() -> [Any]! {
-        // To add configuration options via table cells at the bottom of the sheet, return an array of SLComposeSheetConfigurationItem here.
-        return []
+    func handle(text: String) {
+        print(text)
+
+        let array = text.components(separatedBy: "-")
+
+        guard let company = array.first?.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed),
+            let url = URL(string: "https://www.qollie.com/search?keyword=\(company)&kind=company") else {
+                self.alert(message: "")
+                return
+        }
+
+
+        print(url.absoluteString)
+        let safari = SFSafariViewController(url: url)
+        safari.delegate = self
+        self.present(safari, animated: true, completion: nil)
+    }
+
+    func alert(message: String) {
+        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+
+        alert.addAction(UIAlertAction(title: "確定", style: .cancel) { action in
+            self.dismiss()
+        })
+    }
+
+    func dismiss() {
+        self.extensionContext?.completeRequest(returningItems: nil, completionHandler: nil)
     }
 }
 
 
 extension LOViewController: SFSafariViewControllerDelegate {
     func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
-        self.extensionContext?.completeRequest(returningItems: nil, completionHandler: nil)
+        self.dismiss()
     }
 }
