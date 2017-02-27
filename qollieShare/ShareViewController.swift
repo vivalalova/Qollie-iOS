@@ -43,7 +43,7 @@ class LOViewController: UIViewController {
         }
     }
 
-    func handle(text: String) {
+    fileprivate func handle(text: String) {
         let array = text.components(separatedBy: "-")
 
         guard let company = array.first?.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed),
@@ -58,7 +58,7 @@ class LOViewController: UIViewController {
         self.present(safari, animated: true, completion: nil)
     }
 
-    func alert(message: String) {
+    fileprivate func alert(message: String) {
         let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
 
         alert.addAction(UIAlertAction(title: "確定", style: .cancel) { action in
@@ -68,12 +68,12 @@ class LOViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
 
-    func dismiss() {
+    fileprivate func dismiss() {
         self.extensionContext?.completeRequest(returningItems: nil, completionHandler: nil)
     }
 }
 
-extension LOViewController:CrashlyticsDelegate {
+extension LOViewController: CrashlyticsDelegate {
     func crashlyticsCanUseBackgroundSessions(_ crashlytics: Crashlytics) -> Bool {
         return false
     }
