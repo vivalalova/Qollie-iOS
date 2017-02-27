@@ -18,10 +18,16 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         scrollView.delegate = self
         
         Answers.logCustomEvent(withName: "打開APP耶", customAttributes: nil)
+        
+        self.setNeedsStatusBarAppearanceUpdate()
     }
 
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         pageControl.currentPage = Int(scrollView.contentOffset.x / self.view.frame.size.width)
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
 }
 
