@@ -61,7 +61,7 @@
                                     <constraint firstAttribute="trailing" secondItem="bOE-m3-XyJ" secondAttribute="trailing" id="wjt-en-ZOY"/>
                                 </constraints>
                             </scrollView>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="E7F-hW-dJc">
+                            <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="E7F-hW-dJc">
                                 <rect key="frame" x="168" y="601" width="39" height="37"/>
                                 <color key="pageIndicatorTintColor" red="0.31885384071187622" green="0.50008375250717896" blue="0.61187341370558368" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="currentPageIndicatorTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -146,10 +146,10 @@
             </objects>
             <point key="canvasLocation" x="116" y="932"/>
         </scene>
-        <!--View Controller-->
+        <!--Intro View Controller-->
         <scene sceneID="mzl-Jx-qhs">
             <objects>
-                <viewController id="BCq-yw-XMS" sceneMemberID="viewController">
+                <viewController id="BCq-yw-XMS" customClass="IntroViewController" customModule="qollie" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ywv-kT-L9p"/>
                         <viewControllerLayoutGuide type="bottom" id="MTj-QV-a0W"/>
@@ -159,21 +159,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3_iphone6Plus_3.IMG_0947" translatesAutoresizingMaskIntoConstraints="NO" id="BC5-e9-F9Y">
-                                <rect key="frame" x="0.0" y="40" width="375" height="547"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="567"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c66-gK-1wc">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="tGh-4M-n2N"/>
+                                </constraints>
+                                <state key="normal" title="前往104">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="go104:" destination="BCq-yw-XMS" eventType="touchUpInside" id="0AG-fj-201"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.35930481549999999" green="0.68029612299999997" blue="0.83928346629999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="BC5-e9-F9Y" firstAttribute="top" secondItem="Ywv-kT-L9p" secondAttribute="bottom" constant="20" id="6ZS-XD-knS"/>
+                            <constraint firstItem="MTj-QV-a0W" firstAttribute="top" secondItem="c66-gK-1wc" secondAttribute="bottom" id="Idp-Bi-F8c"/>
                             <constraint firstItem="BC5-e9-F9Y" firstAttribute="leading" secondItem="xfM-1D-Vex" secondAttribute="leading" id="Okz-2U-jlo"/>
+                            <constraint firstAttribute="trailing" secondItem="c66-gK-1wc" secondAttribute="trailing" id="dQ9-YN-ulH"/>
                             <constraint firstItem="MTj-QV-a0W" firstAttribute="top" secondItem="BC5-e9-F9Y" secondAttribute="bottom" constant="80" id="eQJ-sy-SV3"/>
+                            <constraint firstItem="c66-gK-1wc" firstAttribute="leading" secondItem="xfM-1D-Vex" secondAttribute="leading" id="ga1-Zm-pOL"/>
                             <constraint firstAttribute="trailing" secondItem="BC5-e9-F9Y" secondAttribute="trailing" id="n2x-Fe-WgP"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="openUrlBtn" destination="c66-gK-1wc" id="WtV-EH-Rh6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YQL-OR-Ke2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="775" y="931"/>
+            <point key="canvasLocation" x="773.60000000000002" y="930.58470764617698"/>
         </scene>
     </scenes>
     <resources>
