@@ -1,1 +1,13 @@
+This is a light weight APP extension that connect "104" and "qollie" which make job comments searching easier. 
 
+104:
+https://itunes.apple.com/tw/app/104gong-zuo-kuai-zhao-zhuan/id437817158?l=zh&mt=8
+A job find website
+
+qollie: 
+https://www.qollie.com
+A job comment website.
+
+
+Here is operation video: 
+https://www.dropbox.com/s/1x7ra6iuk234g7p/qollie.mov?dl=0
