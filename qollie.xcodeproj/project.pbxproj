@@ -182,7 +182,7 @@
 				9E23BAC41E63582D006434B1 /* Frameworks */,
 				9E23BAC51E63582D006434B1 /* Resources */,
 				F203B0F2FC5DBE652DF07A9D /* [CP] Copy Pods Resources */,
-				9E23BAD81E639B9B006434B1 /* ShellScript */,
+				9E23BAD91E639FC0006434B1 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -299,7 +299,7 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Fabric/run\" ae32a781ec002f65fd6900f49c380cfbd17c7b86 09bcff82aded0899fc4aa8ed539984fd3275dc66aa2bbb4e306718c01aba3668";
 		};
-		9E23BAD81E639B9B006434B1 /* ShellScript */ = {
+		9E23BAD91E639FC0006434B1 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (

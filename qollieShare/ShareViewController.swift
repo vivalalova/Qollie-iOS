@@ -9,11 +9,20 @@
 import UIKit
 import Social
 import SafariServices
+import Fabric
+import Crashlytics
 
 class LOViewController: UIViewController {
 
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        Fabric.with([Crashlytics.self])
+        Crashlytics.start(withAPIKey: "ae32a781ec002f65fd6900f49c380cfbd17c7b86").delegate = self
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        Answers.logCustomEvent(withName: "打開分享拉", customAttributes: nil)
 
         guard let item = extensionContext?.inputItems.first as? NSExtensionItem, let itemProvider = item.attachments?.first as? NSItemProvider else {
             self.alert(message: "哎呀? 請在104 APP內使用喔")
@@ -61,6 +70,12 @@ class LOViewController: UIViewController {
 
     func dismiss() {
         self.extensionContext?.completeRequest(returningItems: nil, completionHandler: nil)
+    }
+}
+
+extension LOViewController:CrashlyticsDelegate {
+    func crashlyticsCanUseBackgroundSessions(_ crashlytics: Crashlytics) -> Bool {
+        return false
     }
 }
 
