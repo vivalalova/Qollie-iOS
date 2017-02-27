@@ -40,11 +40,34 @@ platform :ios do
 
   desc "Deploy a new version to the App Store"
   lane :release do
-    # match(type: "appstore")
-    # snapshot
-    gym(scheme: "qollie") # Build your app - more options available
-    deliver(force: true)
-    # frameit
+
+    gym(scheme: "qollie")
+    deliver(
+      force: true,
+      automatic_release: true,
+      )
+
+    crashlytics(
+              api_token: "ae32a781ec002f65fd6900f49c380cfbd17c7b86",
+              build_secret: "09bcff82aded0899fc4aa8ed539984fd3275dc66aa2bbb4e306718c01aba3668",
+              groups: ["ALL"],
+              notes: "Distributed with fastlane", # Check out the changelog_from_git_commits action
+              notifications: false
+              )
+
+    # get version and build numbers
+    version = get_version_number()
+    build = get_build_number()
+    tag = version + "b" + build
+
+    # commit
+    commit_version_bump(xcodeproj: "./qollie.xcodeproj",force: true)
+
+    # add tag
+    add_git_tag(tag: tag)
+
+    # push
+    push_to_git_remote
   end
 
   # You can define as many lanes as you want
