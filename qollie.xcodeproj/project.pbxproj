@@ -16,6 +16,10 @@
 		9E23BACA1E63582D006434B1 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E23BAC91E63582D006434B1 /* ShareViewController.swift */; };
 		9E23BACD1E63582D006434B1 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E23BACB1E63582D006434B1 /* MainInterface.storyboard */; };
 		9E23BAD11E63582D006434B1 /* qollieShare.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9E23BAC71E63582D006434B1 /* qollieShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9E812A701E6990E90036F3FE /* lib.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E812A6E1E6990E90036F3FE /* lib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E812A731E6990E90036F3FE /* lib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E812A6C1E6990E90036F3FE /* lib.framework */; };
+		9E812A741E6990E90036F3FE /* lib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9E812A6C1E6990E90036F3FE /* lib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9E812A7A1E6991020036F3FE /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E812A791E6991020036F3FE /* Helper.swift */; };
 		B0C7435E856E0C147D7AEFDB /* Pods_qollie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4293DD73EE00F4D85BE4FF50 /* Pods_qollie.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +30,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 9E23BAC61E63582D006434B1;
 			remoteInfo = qollieShare;
+		};
+		9E812A711E6990E90036F3FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E23BAA61E6357F1006434B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E812A6B1E6990E90036F3FE;
+			remoteInfo = lib;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -39,6 +50,17 @@
 				9E23BAD11E63582D006434B1 /* qollieShare.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E812A781E6990E90036F3FE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9E812A741E6990E90036F3FE /* lib.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -59,6 +81,10 @@
 		9E23BAC91E63582D006434B1 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		9E23BACC1E63582D006434B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		9E23BACE1E63582D006434B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E812A6C1E6990E90036F3FE /* lib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = lib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E812A6E1E6990E90036F3FE /* lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lib.h; sourceTree = "<group>"; };
+		9E812A6F1E6990E90036F3FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E812A791E6991020036F3FE /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		C43902D9AF0B5C43693ECB50 /* Pods-qollie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qollie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-qollie/Pods-qollie.debug.xcconfig"; sourceTree = "<group>"; };
 		FEEA1DC301118E11E32F097C /* Pods-qollieShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qollieShare.release.xcconfig"; path = "Pods/Target Support Files/Pods-qollieShare/Pods-qollieShare.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E812A731E6990E90036F3FE /* lib.framework in Frameworks */,
 				B0C7435E856E0C147D7AEFDB /* Pods_qollie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,6 +104,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				14B3227D602A5F93B1809BDB /* Pods_qollieShare.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E812A681E6990E90036F3FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +142,7 @@
 			children = (
 				9E23BAB01E6357F1006434B1 /* qollie */,
 				9E23BAC81E63582D006434B1 /* share extension */,
+				9E812A6D1E6990E90036F3FE /* lib */,
 				9E23BAAF1E6357F1006434B1 /* Products */,
 				97AE6DE5CA5845206E33DE9B /* Pods */,
 				42478A825B453510B0FF55C2 /* Frameworks */,
@@ -119,6 +154,7 @@
 			children = (
 				9E23BAAE1E6357F1006434B1 /* qollie.app */,
 				9E23BAC71E63582D006434B1 /* qollieShare.appex */,
+				9E812A6C1E6990E90036F3FE /* lib.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,7 +183,28 @@
 			path = qollieShare;
 			sourceTree = "<group>";
 		};
+		9E812A6D1E6990E90036F3FE /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				9E812A6E1E6990E90036F3FE /* lib.h */,
+				9E812A791E6991020036F3FE /* Helper.swift */,
+				9E812A6F1E6990E90036F3FE /* Info.plist */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9E812A691E6990E90036F3FE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E812A701E6990E90036F3FE /* lib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		9E23BAAD1E6357F1006434B1 /* qollie */ = {
@@ -162,11 +219,13 @@
 				9E23BAD71E639957006434B1 /* ShellScript */,
 				9E35FE91ABA2953B562FCBAD /* [CP] Embed Pods Frameworks */,
 				0EF4699C50C30773196135DE /* [CP] Copy Pods Resources */,
+				9E812A781E6990E90036F3FE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				9E23BAD01E63582D006434B1 /* PBXTargetDependency */,
+				9E812A721E6990E90036F3FE /* PBXTargetDependency */,
 			);
 			name = qollie;
 			productName = qollie;
@@ -182,7 +241,7 @@
 				9E23BAC41E63582D006434B1 /* Frameworks */,
 				9E23BAC51E63582D006434B1 /* Resources */,
 				F203B0F2FC5DBE652DF07A9D /* [CP] Copy Pods Resources */,
-				9E23BAD91E639FC0006434B1 /* ShellScript */,
+				9E812A661E6990CE0036F3FE /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -192,6 +251,24 @@
 			productName = qollieShare;
 			productReference = 9E23BAC71E63582D006434B1 /* qollieShare.appex */;
 			productType = "com.apple.product-type.app-extension";
+		};
+		9E812A6B1E6990E90036F3FE /* lib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E812A751E6990E90036F3FE /* Build configuration list for PBXNativeTarget "lib" */;
+			buildPhases = (
+				9E812A671E6990E90036F3FE /* Sources */,
+				9E812A681E6990E90036F3FE /* Frameworks */,
+				9E812A691E6990E90036F3FE /* Headers */,
+				9E812A6A1E6990E90036F3FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = lib;
+			productName = lib;
+			productReference = 9E812A6C1E6990E90036F3FE /* lib.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -213,6 +290,12 @@
 						DevelopmentTeam = 7T6Y9LETK9;
 						ProvisioningStyle = Automatic;
 					};
+					9E812A6B1E6990E90036F3FE = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 7T6Y9LETK9;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 9E23BAA91E6357F1006434B1 /* Build configuration list for PBXProject "qollie" */;
@@ -230,6 +313,7 @@
 			targets = (
 				9E23BAAD1E6357F1006434B1 /* qollie */,
 				9E23BAC61E63582D006434B1 /* qollieShare */,
+				9E812A6B1E6990E90036F3FE /* lib */,
 			);
 		};
 /* End PBXProject section */
@@ -250,6 +334,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E23BACD1E63582D006434B1 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E812A6A1E6990E90036F3FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,19 +390,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Fabric/run\" ae32a781ec002f65fd6900f49c380cfbd17c7b86 09bcff82aded0899fc4aa8ed539984fd3275dc66aa2bbb4e306718c01aba3668";
 		};
-		9E23BAD91E639FC0006434B1 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Fabric/run\" ae32a781ec002f65fd6900f49c380cfbd17c7b86 09bcff82aded0899fc4aa8ed539984fd3275dc66aa2bbb4e306718c01aba3668";
-		};
 		9E35FE91ABA2953B562FCBAD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -326,6 +404,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-qollie/Pods-qollie-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		9E812A661E6990CE0036F3FE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" ae32a781ec002f65fd6900f49c380cfbd17c7b86 09bcff82aded0899fc4aa8ed539984fd3275dc66aa2bbb4e306718c01aba3668";
 		};
 		ADD8F45AB51AD1B5BBC1E289 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -377,6 +468,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9E812A671E6990E90036F3FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E812A7A1E6991020036F3FE /* Helper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -384,6 +483,11 @@
 			isa = PBXTargetDependency;
 			target = 9E23BAC61E63582D006434B1 /* qollieShare */;
 			targetProxy = 9E23BACF1E63582D006434B1 /* PBXContainerItemProxy */;
+		};
+		9E812A721E6990E90036F3FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9E812A6B1E6990E90036F3FE /* lib */;
+			targetProxy = 9E812A711E6990E90036F3FE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -578,6 +682,55 @@
 			};
 			name = Release;
 		};
+		9E812A761E6990E90036F3FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7T6Y9LETK9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = lib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lova.lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9E812A771E6990E90036F3FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7T6Y9LETK9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = lib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lova.lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -607,6 +760,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		9E812A751E6990E90036F3FE /* Build configuration list for PBXNativeTarget "lib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E812A761E6990E90036F3FE /* Debug */,
+				9E812A771E6990E90036F3FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

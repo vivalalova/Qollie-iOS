@@ -8,6 +8,7 @@
 
 import UIKit
 import Crashlytics
+import lib
 
 class ViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var scrollView: UIScrollView!
@@ -31,32 +32,16 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     }
 }
 
-
-
 class IntroViewController: UIViewController {
 
     @IBOutlet weak var openUrlBtn: UIButton?
 
-    let e04 = "fb215646968788192://"
-    var url: URL? {
-        return URL(string: self.e04)
-    }
-
-    var canOpen104: Bool {
-        if let url = url {
-            return UIApplication.shared.canOpenURL(url)
-        }
-        return false
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        openUrlBtn?.isHidden = !self.canOpen104
+        openUrlBtn?.isHidden = !Helper.shared.canOpen104
     }
 
     @IBAction func go104(_ sender: UIButton) {
-        if canOpen104, let url = url {
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
-        }
+        Helper.go104IfPossible()
     }
 }

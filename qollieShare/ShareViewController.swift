@@ -11,6 +11,7 @@ import Social
 import SafariServices
 import Fabric
 import Crashlytics
+import lib
 
 class LOViewController: UIViewController {
 
@@ -64,6 +65,12 @@ class LOViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "確定", style: .cancel) { action in
             self.dismiss()
         })
+
+        if Helper.shared.canOpen104 {
+            alert.addAction(UIAlertAction(title: "開啟104", style: .cancel) { action in
+                Helper.go104IfPossible()
+            })
+        }
 
         self.present(alert, animated: true, completion: nil)
     }
