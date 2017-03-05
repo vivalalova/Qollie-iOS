@@ -18,8 +18,6 @@ default_platform :ios
 platform :ios do
   before_all do
     # ENV["SLACK_URL"] = "https://hooks.slack.com/services/..."
-    
-    
   end
 
   desc "Runs all the tests"
@@ -28,24 +26,18 @@ platform :ios do
   end
 
   desc "Submit a new Beta Build to Apple TestFlight"
-  desc "This will also make sure the profile is up to date"
   lane :beta do
-    # match(type: "appstore") # more information: https://codesigning.guide
-    gym(scheme: "qollie") # Build your app - more options available
+    gym(scheme: "qollie")
     pilot
-
-    # sh "your_script.sh"
-    # You can also use other beta testing services here (run `fastlane actions`)
   end
 
   desc "Deploy a new version to the App Store"
   lane :release do
 
-    gym(scheme: "qollie")
-    deliver(
-      force: true,
-      automatic_release: true,
-      )
+    increment_build_number
+
+    gym(scheme: "qollie", include_bitcode: true, clean: true)
+    deliver(force: true,skip_screenshots: true)
 
     crashlytics(
               api_token: "ae32a781ec002f65fd6900f49c380cfbd17c7b86",
