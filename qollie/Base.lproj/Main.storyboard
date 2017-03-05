@@ -169,7 +169,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="goQollie:" destination="BCq-yw-XMS" eventType="touchUpInside" id="t2g-ie-1Sb"/>
+                                    <action selector="download104:" destination="BCq-yw-XMS" eventType="touchUpInside" id="0gk-st-IDG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c66-gK-1wc">

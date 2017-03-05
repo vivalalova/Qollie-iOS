@@ -48,8 +48,8 @@ class IntroViewController: UIViewController {
             self.present(safari, animated: true, completion: nil)
         }
     }
-
-    @IBAction func goQollie(_ sender: Any) {
+    
+    @IBAction func download104(_ sender: Any) {
         if let url = URL(string: "https://itunes.apple.com/tw/app/104%E5%B7%A5%E4%BD%9C%E5%BF%AB%E6%89%BE/id437817158?l=zh&mt=8") {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         }

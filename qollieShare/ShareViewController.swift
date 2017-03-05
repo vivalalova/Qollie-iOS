@@ -72,12 +72,13 @@ class LOViewController: UIViewController {
             })
         } else if let url = URL(string: "https://itunes.apple.com/tw/app/104%E5%B7%A5%E4%BD%9C%E5%BF%AB%E6%89%BE/id437817158?l=zh&mt=8") {
             alert.addAction(UIAlertAction(title: "安裝104", style: .default) { action in
-                self.open(url: url, complete: nil)
-                self.dismiss()
+                self.open(url: url, complete: {
+                    self.dismiss()
+                })
             })
         }
 
-        alert.addAction(UIAlertAction(title: "打開求職天眼通首頁", style: .default) { action in
+        alert.addAction(UIAlertAction(title: "瀏覽求職天眼通", style: .default) { action in
             let url = URL(string: "https://www.qollie.com/")
             self.open(url: url!, complete: nil)
         })
