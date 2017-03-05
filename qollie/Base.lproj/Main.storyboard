@@ -165,7 +165,7 @@
                                 <rect key="frame" x="0.0" y="607" width="187.5" height="60"/>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="下載104">
+                                <state key="normal" title="Download 104 APP">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -179,7 +179,7 @@
                                     <constraint firstAttribute="height" constant="60" id="tGh-4M-n2N"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="前往104">
+                                <state key="normal" title="Open 104 APP">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -190,7 +190,7 @@
                                 <rect key="frame" x="187.5" y="607" width="187.5" height="60"/>
                                 <color key="backgroundColor" red="0.1215686275" green="0.26274509800000001" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="求職天眼通網頁">
+                                <state key="normal" title="www.Qollie.com">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>

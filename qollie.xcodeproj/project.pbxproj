@@ -20,6 +20,8 @@
 		9E812A731E6990E90036F3FE /* lib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E812A6C1E6990E90036F3FE /* lib.framework */; };
 		9E812A741E6990E90036F3FE /* lib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9E812A6C1E6990E90036F3FE /* lib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9E812A7A1E6991020036F3FE /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E812A791E6991020036F3FE /* Helper.swift */; };
+		9E812AB41E6C0B2E0036F3FE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9E812AB71E6C0B2E0036F3FE /* Localizable.strings */; };
+		9E812AB51E6C0B2E0036F3FE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9E812AB71E6C0B2E0036F3FE /* Localizable.strings */; };
 		B0C7435E856E0C147D7AEFDB /* Pods_qollie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4293DD73EE00F4D85BE4FF50 /* Pods_qollie.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +87,11 @@
 		9E812A6E1E6990E90036F3FE /* lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lib.h; sourceTree = "<group>"; };
 		9E812A6F1E6990E90036F3FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E812A791E6991020036F3FE /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		9E812AAE1E6C0A7C0036F3FE /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		9E812AAF1E6C0A7C0036F3FE /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		9E812AB01E6C0A7C0036F3FE /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/MainInterface.strings"; sourceTree = "<group>"; };
+		9E812AB61E6C0B2E0036F3FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9E812AB81E6C0B340036F3FE /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		C43902D9AF0B5C43693ECB50 /* Pods-qollie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qollie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-qollie/Pods-qollie.debug.xcconfig"; sourceTree = "<group>"; };
 		FEEA1DC301118E11E32F097C /* Pods-qollieShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qollieShare.release.xcconfig"; path = "Pods/Target Support Files/Pods-qollieShare/Pods-qollieShare.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -176,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				9E23BAC91E63582D006434B1 /* ShareViewController.swift */,
+				9E812AB71E6C0B2E0036F3FE /* Localizable.strings */,
 				9E23BACB1E63582D006434B1 /* MainInterface.storyboard */,
 				9E23BACE1E63582D006434B1 /* Info.plist */,
 			);
@@ -305,6 +313,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hant",
 			);
 			mainGroup = 9E23BAA51E6357F1006434B1;
 			productRefGroup = 9E23BAAF1E6357F1006434B1 /* Products */;
@@ -324,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E23BABC1E6357F1006434B1 /* LaunchScreen.storyboard in Resources */,
+				9E812AB41E6C0B2E0036F3FE /* Localizable.strings in Resources */,
 				9E23BAB91E6357F1006434B1 /* Assets.xcassets in Resources */,
 				9E23BAB71E6357F1006434B1 /* Main.storyboard in Resources */,
 			);
@@ -334,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E23BACD1E63582D006434B1 /* MainInterface.storyboard in Resources */,
+				9E812AB51E6C0B2E0036F3FE /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +507,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				9E23BAB61E6357F1006434B1 /* Base */,
+				9E812AAE1E6C0A7C0036F3FE /* zh-Hant */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -504,6 +516,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				9E23BABB1E6357F1006434B1 /* Base */,
+				9E812AAF1E6C0A7C0036F3FE /* zh-Hant */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -512,8 +525,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				9E23BACC1E63582D006434B1 /* Base */,
+				9E812AB01E6C0A7C0036F3FE /* zh-Hant */,
 			);
 			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		9E812AB71E6C0B2E0036F3FE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E812AB61E6C0B2E0036F3FE /* Base */,
+				9E812AB81E6C0B340036F3FE /* zh-Hant */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -523,6 +546,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -573,6 +597,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";

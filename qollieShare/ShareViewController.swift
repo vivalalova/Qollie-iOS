@@ -12,6 +12,7 @@ import SafariServices
 import Fabric
 import Crashlytics
 import lib
+import Localize_Swift
 
 class LOViewController: UIViewController {
 
@@ -58,27 +59,27 @@ class LOViewController: UIViewController {
     }
 
     fileprivate func alert() {
-        let message = "搭配104 APP分享職缺可獲得最佳效果"
+        let message = "Install 104 APP for best experience".localized()
         let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
 
-        alert.addAction(UIAlertAction(title: "確定", style: .cancel) { action in
+        alert.addAction(UIAlertAction(title: "YES".localized(), style: .cancel) { action in
             self.dismiss()
         })
 
         if Helper.shared.canOpen104 {
-            alert.addAction(UIAlertAction(title: "開啟104", style: .default) { action in
+            alert.addAction(UIAlertAction(title: "Open 104".localized(), style: .default) { action in
                 Helper.go104IfPossible()
                 self.dismiss()
             })
         } else if let url = URL(string: "https://itunes.apple.com/tw/app/104%E5%B7%A5%E4%BD%9C%E5%BF%AB%E6%89%BE/id437817158?l=zh&mt=8") {
-            alert.addAction(UIAlertAction(title: "安裝104", style: .default) { action in
+            alert.addAction(UIAlertAction(title: "Install 104".localized(), style: .default) { action in
                 self.open(url: url, complete: {
                     self.dismiss()
                 })
             })
         }
 
-        alert.addAction(UIAlertAction(title: "瀏覽求職天眼通", style: .default) { action in
+        alert.addAction(UIAlertAction(title: "Browse Qollie".localized(), style: .default) { action in
             let url = URL(string: "https://www.qollie.com/")
             self.open(url: url!, complete: nil)
         })
@@ -93,10 +94,10 @@ class LOViewController: UIViewController {
     }
 
     fileprivate func open(url: URL, complete: (() -> Void)?) {
-        let safari = SFSafariViewController(url: url)
-        safari.delegate = self
-
         DispatchQueue.main.async {
+            let safari = SFSafariViewController(url: url)
+            safari.delegate = self
+
             self.present(safari, animated: true) {
                 complete?()
             }

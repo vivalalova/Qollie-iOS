@@ -6,6 +6,7 @@ target 'qollie' do
   use_frameworks!
   pod 'Fabric'
   pod 'Crashlytics'
+  pod 'Localize-Swift'
   # Pods for qollie
 
 end
@@ -15,6 +16,7 @@ target 'qollieShare' do
   use_frameworks!
   pod 'Fabric'
   pod 'Crashlytics'
+  pod 'Localize-Swift'
   # Pods for qollieShare
 
 end
