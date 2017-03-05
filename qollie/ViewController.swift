@@ -8,6 +8,8 @@
 
 import UIKit
 import Crashlytics
+import lib
+import SafariServices
 
 class ViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var scrollView: UIScrollView!
@@ -31,32 +33,29 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     }
 }
 
-
-
 class IntroViewController: UIViewController {
 
     @IBOutlet weak var openUrlBtn: UIButton?
 
-    let e04 = "fb215646968788192://"
-    var url: URL? {
-        return URL(string: self.e04)
-    }
-
-    var canOpen104: Bool {
-        if let url = url {
-            return UIApplication.shared.canOpenURL(url)
-        }
-        return false
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        openUrlBtn?.isHidden = !self.canOpen104
+        openUrlBtn?.isHidden = !Helper.shared.canOpen104
+    }
+
+    @IBAction func qollieWeb(_ sender: Any) {
+        if let url = URL(string: "https://www.qollie.com") {
+            let safari = SFSafariViewController(url: url)
+            self.present(safari, animated: true, completion: nil)
+        }
+    }
+    
+    @IBAction func download104(_ sender: Any) {
+        if let url = URL(string: "https://itunes.apple.com/tw/app/104%E5%B7%A5%E4%BD%9C%E5%BF%AB%E6%89%BE/id437817158?l=zh&mt=8") {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
     }
 
     @IBAction func go104(_ sender: UIButton) {
-        if canOpen104, let url = url {
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
-        }
+        Helper.go104IfPossible()
     }
 }
