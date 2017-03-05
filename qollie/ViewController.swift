@@ -37,11 +37,11 @@ class IntroViewController: UIViewController {
 
     @IBOutlet weak var openUrlBtn: UIButton?
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         openUrlBtn?.isHidden = !Helper.shared.canOpen104
     }
-
+    
     @IBAction func qollieWeb(_ sender: Any) {
         if let url = URL(string: "https://www.qollie.com") {
             let safari = SFSafariViewController(url: url)
