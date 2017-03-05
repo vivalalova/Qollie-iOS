@@ -41,11 +41,10 @@ platform :ios do
   desc "Deploy a new version to the App Store"
   lane :release do
 
-    gym(scheme: "qollie")
-    deliver(
-      force: true,
-      automatic_release: true,
-      )
+    increment_build_number
+
+    gym(scheme: "qollie", include_bitcode: true, clean: true)
+    deliver(force: true,skip_screenshots: true)
 
     crashlytics(
               api_token: "ae32a781ec002f65fd6900f49c380cfbd17c7b86",
