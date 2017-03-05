@@ -768,6 +768,7 @@
 				9E812A771E6990E90036F3FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

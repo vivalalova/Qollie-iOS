@@ -9,6 +9,7 @@
 import UIKit
 import Crashlytics
 import lib
+import SafariServices
 
 class ViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var scrollView: UIScrollView!
@@ -39,6 +40,19 @@ class IntroViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         openUrlBtn?.isHidden = !Helper.shared.canOpen104
+    }
+
+    @IBAction func qollieWeb(_ sender: Any) {
+        if let url = URL(string: "https://www.qollie.com") {
+            let safari = SFSafariViewController(url: url)
+            self.present(safari, animated: true, completion: nil)
+        }
+    }
+
+    @IBAction func goQollie(_ sender: Any) {
+        if let url = URL(string: "https://itunes.apple.com/tw/app/104%E5%B7%A5%E4%BD%9C%E5%BF%AB%E6%89%BE/id437817158?l=zh&mt=8") {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
     }
 
     @IBAction func go104(_ sender: UIButton) {

@@ -26,40 +26,39 @@ class LOViewController: UIViewController {
         Answers.logCustomEvent(withName: "打開分享拉", customAttributes: nil)
 
         guard let item = extensionContext?.inputItems.first as? NSExtensionItem, let itemProvider = item.attachments?.first as? NSItemProvider else {
-            self.alert(message: "哎呀? 請在104 APP內使用喔")
+            self.alert()
             return
         }
 
         if itemProvider.hasItemConformingToTypeIdentifier("public.plain-text") {
             itemProvider.loadItem(forTypeIdentifier: "public.plain-text", options: nil, completionHandler: { (text, err) in
                 guard let text = text as? String else {
-                    self.alert(message: "請在104 APP內使用喔")
+                    self.alert()
                     return
                 }
 
                 self.handle(text: text)
             })
         } else {
-            self.alert(message: "哎呀? 請在104 APP內使用喔")
+            self.alert()
         }
     }
 
     fileprivate func handle(text: String) {
         let array = text.components(separatedBy: "-")
 
-        guard let company = array.first?.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed),
+        guard array.count == 2,
+            let company = array.first?.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed),
             let url = URL(string: "https://www.qollie.com/search?keyword=\(company)&kind=company") else {
-                self.alert(message: "請在104 APP內使用喔")
+                self.alert()
                 return
         }
 
-        let safari = SFSafariViewController(url: url)
-        safari.delegate = self
-
-        self.present(safari, animated: true, completion: nil)
+        self.open(url: url, complete: nil)
     }
 
-    fileprivate func alert(message: String) {
+    fileprivate func alert() {
+        let message = "搭配104 APP分享職缺可獲得最佳效果"
         let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
 
         alert.addAction(UIAlertAction(title: "確定", style: .cancel) { action in
@@ -67,16 +66,40 @@ class LOViewController: UIViewController {
         })
 
         if Helper.shared.canOpen104 {
-            alert.addAction(UIAlertAction(title: "開啟104", style: .cancel) { action in
+            alert.addAction(UIAlertAction(title: "開啟104", style: .default) { action in
                 Helper.go104IfPossible()
+                self.dismiss()
+            })
+        } else if let url = URL(string: "https://itunes.apple.com/tw/app/104%E5%B7%A5%E4%BD%9C%E5%BF%AB%E6%89%BE/id437817158?l=zh&mt=8") {
+            alert.addAction(UIAlertAction(title: "安裝104", style: .default) { action in
+                self.open(url: url, complete: nil)
+                self.dismiss()
             })
         }
 
-        self.present(alert, animated: true, completion: nil)
+        alert.addAction(UIAlertAction(title: "打開求職天眼通首頁", style: .default) { action in
+            let url = URL(string: "https://www.qollie.com/")
+            self.open(url: url!, complete: nil)
+        })
+
+        DispatchQueue.main.async {
+            self.present(alert, animated: true, completion: nil)
+        }
     }
 
     fileprivate func dismiss() {
         self.extensionContext?.completeRequest(returningItems: nil, completionHandler: nil)
+    }
+
+    fileprivate func open(url: URL, complete: (() -> Void)?) {
+        let safari = SFSafariViewController(url: url)
+        safari.delegate = self
+
+        DispatchQueue.main.async {
+            self.present(safari, animated: true) {
+                complete?()
+            }
+        }
     }
 }
 
