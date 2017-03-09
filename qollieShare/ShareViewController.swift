@@ -48,7 +48,7 @@ class LOViewController: UIViewController {
     fileprivate func handle(text: String) {
         let array = text.components(separatedBy: "-")
 
-        guard array.count == 2,
+        guard array.count >= 2,
             let company = array.first?.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed),
             let url = URL(string: "https://www.qollie.com/search?keyword=\(company)&kind=company") else {
                 self.alert()
