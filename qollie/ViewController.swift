@@ -44,6 +44,9 @@ class IntroViewController: UIViewController {
     
     @IBAction func qollieWeb(_ sender: Any) {
         if let url = URL(string: "https://www.qollie.com") {
+            Answers.logCustomEvent(withName: "APP看官網", customAttributes: nil)
+
+
             let safari = SFSafariViewController(url: url)
             self.present(safari, animated: true, completion: nil)
         }
@@ -51,11 +54,20 @@ class IntroViewController: UIViewController {
     
     @IBAction func download104(_ sender: Any) {
         if let url = URL(string: "https://itunes.apple.com/tw/app/104%E5%B7%A5%E4%BD%9C%E5%BF%AB%E6%89%BE/id437817158?l=zh&mt=8") {
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+
+            Answers.logCustomEvent(withName: "下載104", customAttributes: nil)
+
+
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            } else {
+                UIApplication.shared.openURL(url)
+            }
         }
     }
 
     @IBAction func go104(_ sender: UIButton) {
+        Answers.logCustomEvent(withName: "打開104", customAttributes: nil)
         Helper.go104IfPossible()
     }
 }

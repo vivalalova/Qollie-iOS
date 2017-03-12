@@ -26,7 +26,11 @@ open class Helper {
 
     open class func go104IfPossible() {
         if Helper().canOpen104, let url = Helper.url {
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            } else {
+                UIApplication.shared.openURL(url)
+            }
         }
     }
 }

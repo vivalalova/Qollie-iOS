@@ -51,10 +51,12 @@ class LOViewController: UIViewController {
         guard array.count >= 2,
             let company = array.first?.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed),
             let url = URL(string: "https://www.qollie.com/search?keyword=\(company)&kind=company") else {
+                Answers.logCustomEvent(withName: "查詢沒過", customAttributes: nil)
                 self.alert()
                 return
         }
 
+        Answers.logCustomEvent(withName: "查詢有過", customAttributes: nil)
         self.open(url: url, complete: nil)
     }
 
