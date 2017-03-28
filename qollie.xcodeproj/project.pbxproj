@@ -291,11 +291,13 @@
 					9E23BAAD1E6357F1006434B1 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 7T6Y9LETK9;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					9E23BAC61E63582D006434B1 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 7T6Y9LETK9;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					9E812A6B1E6990E90036F3FE = {

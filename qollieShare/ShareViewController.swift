@@ -38,14 +38,14 @@ class LOViewController: UIViewController {
                     return
                 }
 
-                self.handle(text: text)
+                self.handle(text)
             })
         } else {
             self.alert()
         }
     }
 
-    fileprivate func handle(text: String) {
+    fileprivate func handle(_ text: String) {
         let array = text.components(separatedBy: "-")
 
         guard array.count >= 2,
@@ -57,7 +57,7 @@ class LOViewController: UIViewController {
         }
 
         Answers.logCustomEvent(withName: "查詢有過", customAttributes: nil)
-        self.open(url: url, complete: nil)
+        self.open(url, complete: nil)
     }
 
     fileprivate func alert() {
@@ -75,7 +75,7 @@ class LOViewController: UIViewController {
             })
         } else if let url = URL(string: "https://itunes.apple.com/tw/app/104%E5%B7%A5%E4%BD%9C%E5%BF%AB%E6%89%BE/id437817158?l=zh&mt=8") {
             alert.addAction(UIAlertAction(title: "Install 104".localized(), style: .default) { action in
-                self.open(url: url, complete: {
+                self.open(url, complete: {
                     self.dismiss()
                 })
             })
@@ -83,7 +83,7 @@ class LOViewController: UIViewController {
 
         alert.addAction(UIAlertAction(title: "Browse Qollie".localized(), style: .default) { action in
             let url = URL(string: "https://www.qollie.com/")
-            self.open(url: url!, complete: nil)
+            self.open(url!, complete: nil)
         })
 
         DispatchQueue.main.async {
@@ -95,7 +95,7 @@ class LOViewController: UIViewController {
         self.extensionContext?.completeRequest(returningItems: nil, completionHandler: nil)
     }
 
-    fileprivate func open(url: URL, complete: (() -> Void)?) {
+    fileprivate func open(_ url: URL, complete: (() -> Void)?) {
         DispatchQueue.main.async {
             let safari = SFSafariViewController(url: url)
             safari.delegate = self
