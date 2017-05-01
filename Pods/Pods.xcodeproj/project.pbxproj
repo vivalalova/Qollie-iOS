@@ -1,0 +1,778 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C817F92090D01EE5024ACA3DE759466 /* Pods-qollieShare-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E0480D30A37A26FC20F6ED5ED5A75F /* Pods-qollieShare-dummy.m */; };
+		0D28630D905C9A724E21F7E3DEAB1C61 /* Localize_Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = B328A19CAA97F8133DBB1883B0C2E9DD /* Localize_Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C7444BB2D1C4B78AB22F860265D98FC /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5689020D2F7326568F13D39158DA18 /* Localize.swift */; };
+		1FBDCD201DA23F59FACE92910FEF1BF1 /* Pods-qollie-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 132C5BABDF2A5D008D6EA061803B2226 /* Pods-qollie-dummy.m */; };
+		2668A39759D5E3959F835D87D1D2E536 /* Localize-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2046417DA3874D9EB378A277B06EA344 /* Localize-Swift-dummy.m */; };
+		2D2C73C3C3D54860A598D8163929E7CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		2FB56A633324C594015F083FFABB954E /* String+LocalizeTableName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526844BF2774A32CBF73B6147DB865ED /* String+LocalizeTableName.swift */; };
+		7752A58B9E0E6CD6226D992E25F755F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		79DAEBB36A3866FDC087303A7963D944 /* String+LocalizedBundleTableName.swift in Sources */ = {isa = PBXBuildFile; fileRef = A691A5B64D672FDE68F5AAEA2CCC4384 /* String+LocalizedBundleTableName.swift */; };
+		9D5270E0D215E4A0E230D1D25E27F463 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		9D654CC505D56DF99F9EEFEC81E8F98A /* Pods-qollieShare-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D7C4812579B9DEBCDE78B822292292CD /* Pods-qollieShare-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3DA82863080695A4CF91FDE28FFD559 /* Localize-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 49367C6E4D44FC2648EB9781A446211B /* Localize-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E16F4031BADDBC81EED90DD8F2C6C0A8 /* String+LocalizeBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E4DF194B836F34966DF40182C878AE /* String+LocalizeBundle.swift */; };
+		E6F4D7369E36D3998E03501C490B3A05 /* Pods-qollie-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F6B843844F15E44112DBB8BB7790939 /* Pods-qollie-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		69147DCFCA262B2D4F1EC3DD97B7E991 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC00A2B118650C6C90D34FB24F60280D;
+			remoteInfo = "Localize-Swift";
+		};
+		9A56C8C3BE13FCB6EA80FE6DE1B72AD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC00A2B118650C6C90D34FB24F60280D;
+			remoteInfo = "Localize-Swift";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0278D9311A9F078295BFCF3F9F35B594 /* Localize-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Localize-Swift.modulemap"; sourceTree = "<group>"; };
+		08E4DF194B836F34966DF40182C878AE /* String+LocalizeBundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+LocalizeBundle.swift"; path = "Sources/String+LocalizeBundle.swift"; sourceTree = "<group>"; };
+		132C5BABDF2A5D008D6EA061803B2226 /* Pods-qollie-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-qollie-dummy.m"; sourceTree = "<group>"; };
+		1356FE9BC7D6AE9880249F45972CD5F9 /* Pods-qollie-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-qollie-resources.sh"; sourceTree = "<group>"; };
+		15E63D3C88697AE1260FC3EDBABEBF90 /* FABAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FABAttributes.h; path = iOS/Fabric.framework/Headers/FABAttributes.h; sourceTree = "<group>"; };
+		179E9A92D0A74A19451FA70BF16AD182 /* CLSAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSAttributes.h; path = iOS/Crashlytics.framework/Headers/CLSAttributes.h; sourceTree = "<group>"; };
+		2046417DA3874D9EB378A277B06EA344 /* Localize-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Localize-Swift-dummy.m"; sourceTree = "<group>"; };
+		265643568910833838DA6930A6BDD938 /* Pods-qollie-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-qollie-frameworks.sh"; sourceTree = "<group>"; };
+		29AED890F30E281A5A44005790FA2469 /* Pods_qollieShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_qollieShare.framework; path = "Pods-qollieShare.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AA0D5F71F6E067B5BA6BE7AB5BA0A60 /* Pods-qollieShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-qollieShare.release.xcconfig"; sourceTree = "<group>"; };
+		2CA733D50B8B1F8885B6DF27FA7CDA17 /* Pods_qollie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_qollie.framework; path = "Pods-qollie.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33E0480D30A37A26FC20F6ED5ED5A75F /* Pods-qollieShare-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-qollieShare-dummy.m"; sourceTree = "<group>"; };
+		3B0DE9F84EB002F90E7FDD3E9AC86048 /* Pods-qollieShare-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-qollieShare-resources.sh"; sourceTree = "<group>"; };
+		40FD17D7D06348EB47ECD74587A950A8 /* CLSLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSLogging.h; path = iOS/Crashlytics.framework/Headers/CLSLogging.h; sourceTree = "<group>"; };
+		49367C6E4D44FC2648EB9781A446211B /* Localize-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Localize-Swift-umbrella.h"; sourceTree = "<group>"; };
+		4B016F206F062114DDF06A1F6D1BA6D3 /* Pods-qollie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-qollie.debug.xcconfig"; sourceTree = "<group>"; };
+		4C5689020D2F7326568F13D39158DA18 /* Localize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Localize.swift; path = Sources/Localize.swift; sourceTree = "<group>"; };
+		526844BF2774A32CBF73B6147DB865ED /* String+LocalizeTableName.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+LocalizeTableName.swift"; path = "Sources/String+LocalizeTableName.swift"; sourceTree = "<group>"; };
+		535F830A61AB68120938AEA14CB98E18 /* Localize_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Localize_Swift.framework; path = "Localize-Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5937844D8C29442CCD773C1E59E60629 /* CLSReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSReport.h; path = iOS/Crashlytics.framework/Headers/CLSReport.h; sourceTree = "<group>"; };
+		5AFF90CFB1D67647097EA1BBF71D939B /* Fabric.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Fabric.h; path = iOS/Fabric.framework/Headers/Fabric.h; sourceTree = "<group>"; };
+		749418844D7DFC5E2D6F6E1C68A9402A /* Pods-qollieShare.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-qollieShare.modulemap"; sourceTree = "<group>"; };
+		76FD512CEE1753F2B401CED5E5DEA4A9 /* Crashlytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Crashlytics.h; path = iOS/Crashlytics.framework/Headers/Crashlytics.h; sourceTree = "<group>"; };
+		7F6B843844F15E44112DBB8BB7790939 /* Pods-qollie-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-qollie-umbrella.h"; sourceTree = "<group>"; };
+		86C437B37A2F4893E53386A64EE05E21 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
+		925846523D2DCD9DE9B95B92EEF4E75B /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		950A7823B208B838F9AFE8FFEB5DC2A6 /* Pods-qollieShare-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-qollieShare-acknowledgements.plist"; sourceTree = "<group>"; };
+		9D43F007FD071226B5FA41A8C88E2CA7 /* Pods-qollie-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-qollie-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A2CEA610B5F81F2E47E4BE9319FBE3BA /* ANSCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ANSCompatibility.h; path = iOS/Crashlytics.framework/Headers/ANSCompatibility.h; sourceTree = "<group>"; };
+		A41DA71E9D9239029924ED7D9588D7BA /* Pods-qollieShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-qollieShare.debug.xcconfig"; sourceTree = "<group>"; };
+		A4CC672D828E6B9051DA71A290C25887 /* Localize-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Localize-Swift-prefix.pch"; sourceTree = "<group>"; };
+		A691A5B64D672FDE68F5AAEA2CCC4384 /* String+LocalizedBundleTableName.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+LocalizedBundleTableName.swift"; path = "Sources/String+LocalizedBundleTableName.swift"; sourceTree = "<group>"; };
+		A938F747EC49C3C094E801DF14A416DC /* Answers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Answers.h; path = iOS/Crashlytics.framework/Headers/Answers.h; sourceTree = "<group>"; };
+		B328A19CAA97F8133DBB1883B0C2E9DD /* Localize_Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Localize_Swift.h; path = Sources/Localize_Swift.h; sourceTree = "<group>"; };
+		B62284A5F33B2010C4F8D83B25CEB1CE /* Pods-qollie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-qollie.release.xcconfig"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CE4FD79A9DC5FB5506509F6DF2C28713 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D55DEED5E5302B8D89DF17B135D36D84 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7C4812579B9DEBCDE78B822292292CD /* Pods-qollieShare-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-qollieShare-umbrella.h"; sourceTree = "<group>"; };
+		D96BC3584603469EBA1843C9ED6E4695 /* Pods-qollie.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-qollie.modulemap"; sourceTree = "<group>"; };
+		DA8796E9C079FE0AFC930E9A30EBA69C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3350388AF7A59553FD68FCDE6E48366 /* Localize-Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Localize-Swift.xcconfig"; sourceTree = "<group>"; };
+		E3893F2F7EAAC74E0D8C2F0876B89D89 /* CLSStackFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSStackFrame.h; path = iOS/Crashlytics.framework/Headers/CLSStackFrame.h; sourceTree = "<group>"; };
+		F13C331070C09749DEEE387E02DF2A86 /* Pods-qollieShare-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-qollieShare-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F549A52272C4C61D53DC9B46E0CB8468 /* Pods-qollie-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-qollie-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD79FA05236E7A9121BBF2A3B6E9A2B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D2C73C3C3D54860A598D8163929E7CB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBA00CC3B4502A1738D9B258C63D2037 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D5270E0D215E4A0E230D1D25E27F463 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6C00396858DF1803806EA8F3670ACD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7752A58B9E0E6CD6226D992E25F755F5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1590821D1C09C03998C04E963A8E254D /* Crashlytics */ = {
+			isa = PBXGroup;
+			children = (
+				A2CEA610B5F81F2E47E4BE9319FBE3BA /* ANSCompatibility.h */,
+				A938F747EC49C3C094E801DF14A416DC /* Answers.h */,
+				179E9A92D0A74A19451FA70BF16AD182 /* CLSAttributes.h */,
+				40FD17D7D06348EB47ECD74587A950A8 /* CLSLogging.h */,
+				5937844D8C29442CCD773C1E59E60629 /* CLSReport.h */,
+				E3893F2F7EAAC74E0D8C2F0876B89D89 /* CLSStackFrame.h */,
+				76FD512CEE1753F2B401CED5E5DEA4A9 /* Crashlytics.h */,
+				9B94AEFA4D130280E7781711C7B3CBD2 /* Frameworks */,
+			);
+			name = Crashlytics;
+			path = Crashlytics;
+			sourceTree = "<group>";
+		};
+		3683CBC3A6782CF5004520A2B67BD44B /* Pods-qollieShare */ = {
+			isa = PBXGroup;
+			children = (
+				D55DEED5E5302B8D89DF17B135D36D84 /* Info.plist */,
+				749418844D7DFC5E2D6F6E1C68A9402A /* Pods-qollieShare.modulemap */,
+				F13C331070C09749DEEE387E02DF2A86 /* Pods-qollieShare-acknowledgements.markdown */,
+				950A7823B208B838F9AFE8FFEB5DC2A6 /* Pods-qollieShare-acknowledgements.plist */,
+				33E0480D30A37A26FC20F6ED5ED5A75F /* Pods-qollieShare-dummy.m */,
+				3B0DE9F84EB002F90E7FDD3E9AC86048 /* Pods-qollieShare-resources.sh */,
+				D7C4812579B9DEBCDE78B822292292CD /* Pods-qollieShare-umbrella.h */,
+				A41DA71E9D9239029924ED7D9588D7BA /* Pods-qollieShare.debug.xcconfig */,
+				2AA0D5F71F6E067B5BA6BE7AB5BA0A60 /* Pods-qollieShare.release.xcconfig */,
+			);
+			name = "Pods-qollieShare";
+			path = "Target Support Files/Pods-qollieShare";
+			sourceTree = "<group>";
+		};
+		580FF6963921835720E330F4D9ADB2F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86C437B37A2F4893E53386A64EE05E21 /* Fabric.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				BFFEA9D0A3F212947CF351106086A31D /* Pods */,
+				9BE8484A91379346070B7E39125DB256 /* Products */,
+				C6C5DA42080727E4254D7AE515EC9000 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		918A3E0F82BD820FBF681A767BD35A2C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE4FD79A9DC5FB5506509F6DF2C28713 /* Info.plist */,
+				0278D9311A9F078295BFCF3F9F35B594 /* Localize-Swift.modulemap */,
+				E3350388AF7A59553FD68FCDE6E48366 /* Localize-Swift.xcconfig */,
+				2046417DA3874D9EB378A277B06EA344 /* Localize-Swift-dummy.m */,
+				A4CC672D828E6B9051DA71A290C25887 /* Localize-Swift-prefix.pch */,
+				49367C6E4D44FC2648EB9781A446211B /* Localize-Swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Localize-Swift";
+			sourceTree = "<group>";
+		};
+		9B94AEFA4D130280E7781711C7B3CBD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				925846523D2DCD9DE9B95B92EEF4E75B /* Crashlytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9BE8484A91379346070B7E39125DB256 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				535F830A61AB68120938AEA14CB98E18 /* Localize_Swift.framework */,
+				2CA733D50B8B1F8885B6DF27FA7CDA17 /* Pods_qollie.framework */,
+				29AED890F30E281A5A44005790FA2469 /* Pods_qollieShare.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B15F5DF78A18D0BB759A0F54EF57DCE3 /* Pods-qollie */ = {
+			isa = PBXGroup;
+			children = (
+				DA8796E9C079FE0AFC930E9A30EBA69C /* Info.plist */,
+				D96BC3584603469EBA1843C9ED6E4695 /* Pods-qollie.modulemap */,
+				9D43F007FD071226B5FA41A8C88E2CA7 /* Pods-qollie-acknowledgements.markdown */,
+				F549A52272C4C61D53DC9B46E0CB8468 /* Pods-qollie-acknowledgements.plist */,
+				132C5BABDF2A5D008D6EA061803B2226 /* Pods-qollie-dummy.m */,
+				265643568910833838DA6930A6BDD938 /* Pods-qollie-frameworks.sh */,
+				1356FE9BC7D6AE9880249F45972CD5F9 /* Pods-qollie-resources.sh */,
+				7F6B843844F15E44112DBB8BB7790939 /* Pods-qollie-umbrella.h */,
+				4B016F206F062114DDF06A1F6D1BA6D3 /* Pods-qollie.debug.xcconfig */,
+				B62284A5F33B2010C4F8D83B25CEB1CE /* Pods-qollie.release.xcconfig */,
+			);
+			name = "Pods-qollie";
+			path = "Target Support Files/Pods-qollie";
+			sourceTree = "<group>";
+		};
+		BAE86539E74A756964FD0272A15ADC00 /* Fabric */ = {
+			isa = PBXGroup;
+			children = (
+				15E63D3C88697AE1260FC3EDBABEBF90 /* FABAttributes.h */,
+				5AFF90CFB1D67647097EA1BBF71D939B /* Fabric.h */,
+				580FF6963921835720E330F4D9ADB2F5 /* Frameworks */,
+			);
+			name = Fabric;
+			path = Fabric;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BFFEA9D0A3F212947CF351106086A31D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1590821D1C09C03998C04E963A8E254D /* Crashlytics */,
+				BAE86539E74A756964FD0272A15ADC00 /* Fabric */,
+				ED30BA426F81C3882975290C49B0042D /* Localize-Swift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C6C5DA42080727E4254D7AE515EC9000 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B15F5DF78A18D0BB759A0F54EF57DCE3 /* Pods-qollie */,
+				3683CBC3A6782CF5004520A2B67BD44B /* Pods-qollieShare */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		ED30BA426F81C3882975290C49B0042D /* Localize-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				4C5689020D2F7326568F13D39158DA18 /* Localize.swift */,
+				B328A19CAA97F8133DBB1883B0C2E9DD /* Localize_Swift.h */,
+				08E4DF194B836F34966DF40182C878AE /* String+LocalizeBundle.swift */,
+				A691A5B64D672FDE68F5AAEA2CCC4384 /* String+LocalizedBundleTableName.swift */,
+				526844BF2774A32CBF73B6147DB865ED /* String+LocalizeTableName.swift */,
+				918A3E0F82BD820FBF681A767BD35A2C /* Support Files */,
+			);
+			name = "Localize-Swift";
+			path = "Localize-Swift";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2CFFEC24E78F0235CBFBC3579C4F0309 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3DA82863080695A4CF91FDE28FFD559 /* Localize-Swift-umbrella.h in Headers */,
+				0D28630D905C9A724E21F7E3DEAB1C61 /* Localize_Swift.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31B8CAC52936F8848959B8013F5FD22D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D654CC505D56DF99F9EEFEC81E8F98A /* Pods-qollieShare-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1C2638DD3AE5F0B5F473E9740395B37 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6F4D7369E36D3998E03501C490B3A05 /* Pods-qollie-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		48CD6632AF63D931A7659D7F5CCB0C4B /* Pods-qollie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C869ADF07439457EBF5F9AA09640799C /* Build configuration list for PBXNativeTarget "Pods-qollie" */;
+			buildPhases = (
+				4E7D4B8AD9F64A485FA7B30FF7786521 /* Sources */,
+				BD79FA05236E7A9121BBF2A3B6E9A2B5 /* Frameworks */,
+				C1C2638DD3AE5F0B5F473E9740395B37 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43564ACA43891B42B47AB6C45E83F837 /* PBXTargetDependency */,
+			);
+			name = "Pods-qollie";
+			productName = "Pods-qollie";
+			productReference = 2CA733D50B8B1F8885B6DF27FA7CDA17 /* Pods_qollie.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7016C2438A68A5D6C5F1C8FCD018EF28 /* Pods-qollieShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33C15A1720BA8796058741672560D097 /* Build configuration list for PBXNativeTarget "Pods-qollieShare" */;
+			buildPhases = (
+				B83E4E2A62EA9E1F0548F9CB2BD51AEB /* Sources */,
+				F6C00396858DF1803806EA8F3670ACD7 /* Frameworks */,
+				31B8CAC52936F8848959B8013F5FD22D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				938EC67B694AC7C47178DA1EB18328DC /* PBXTargetDependency */,
+			);
+			name = "Pods-qollieShare";
+			productName = "Pods-qollieShare";
+			productReference = 29AED890F30E281A5A44005790FA2469 /* Pods_qollieShare.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FC00A2B118650C6C90D34FB24F60280D /* Localize-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59C8F3C63A2638A53809C3731BB0A5EC /* Build configuration list for PBXNativeTarget "Localize-Swift" */;
+			buildPhases = (
+				E31867145526F61F8D54AFFDD084EEAC /* Sources */,
+				EBA00CC3B4502A1738D9B258C63D2037 /* Frameworks */,
+				2CFFEC24E78F0235CBFBC3579C4F0309 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Localize-Swift";
+			productName = "Localize-Swift";
+			productReference = 535F830A61AB68120938AEA14CB98E18 /* Localize_Swift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 9BE8484A91379346070B7E39125DB256 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC00A2B118650C6C90D34FB24F60280D /* Localize-Swift */,
+				48CD6632AF63D931A7659D7F5CCB0C4B /* Pods-qollie */,
+				7016C2438A68A5D6C5F1C8FCD018EF28 /* Pods-qollieShare */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E7D4B8AD9F64A485FA7B30FF7786521 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FBDCD201DA23F59FACE92910FEF1BF1 /* Pods-qollie-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B83E4E2A62EA9E1F0548F9CB2BD51AEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C817F92090D01EE5024ACA3DE759466 /* Pods-qollieShare-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E31867145526F61F8D54AFFDD084EEAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2668A39759D5E3959F835D87D1D2E536 /* Localize-Swift-dummy.m in Sources */,
+				1C7444BB2D1C4B78AB22F860265D98FC /* Localize.swift in Sources */,
+				E16F4031BADDBC81EED90DD8F2C6C0A8 /* String+LocalizeBundle.swift in Sources */,
+				79DAEBB36A3866FDC087303A7963D944 /* String+LocalizedBundleTableName.swift in Sources */,
+				2FB56A633324C594015F083FFABB954E /* String+LocalizeTableName.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43564ACA43891B42B47AB6C45E83F837 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Localize-Swift";
+			target = FC00A2B118650C6C90D34FB24F60280D /* Localize-Swift */;
+			targetProxy = 69147DCFCA262B2D4F1EC3DD97B7E991 /* PBXContainerItemProxy */;
+		};
+		938EC67B694AC7C47178DA1EB18328DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Localize-Swift";
+			target = FC00A2B118650C6C90D34FB24F60280D /* Localize-Swift */;
+			targetProxy = 9A56C8C3BE13FCB6EA80FE6DE1B72AD9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		053010CB678192606C3502AD910025A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3350388AF7A59553FD68FCDE6E48366 /* Localize-Swift.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Localize-Swift/Localize-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Localize-Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Localize-Swift/Localize-Swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Localize_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0FFF3062714A17E49BFB56E53933FD2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AA0D5F71F6E067B5BA6BE7AB5BA0A60 /* Pods-qollieShare.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-qollieShare/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-qollieShare/Pods-qollieShare.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_qollieShare;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2F97534507404CE45545A17BDF46BD68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B016F206F062114DDF06A1F6D1BA6D3 /* Pods-qollie.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-qollie/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-qollie/Pods-qollie.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_qollie;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A612C2132152BFEE55D09690E5477C47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A41DA71E9D9239029924ED7D9588D7BA /* Pods-qollieShare.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-qollieShare/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-qollieShare/Pods-qollieShare.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_qollieShare;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ABA8C17510912E314126CBA04D0605B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3350388AF7A59553FD68FCDE6E48366 /* Localize-Swift.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Localize-Swift/Localize-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Localize-Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Localize-Swift/Localize-Swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Localize_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AE6F99302A850A5FED46E61C63175A51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B62284A5F33B2010C4F8D83B25CEB1CE /* Pods-qollie.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-qollie/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-qollie/Pods-qollie.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_qollie;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B7324857C38B065FEB1EEE3105C2367A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */,
+				B7324857C38B065FEB1EEE3105C2367A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33C15A1720BA8796058741672560D097 /* Build configuration list for PBXNativeTarget "Pods-qollieShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A612C2132152BFEE55D09690E5477C47 /* Debug */,
+				0FFF3062714A17E49BFB56E53933FD2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59C8F3C63A2638A53809C3731BB0A5EC /* Build configuration list for PBXNativeTarget "Localize-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				053010CB678192606C3502AD910025A2 /* Debug */,
+				ABA8C17510912E314126CBA04D0605B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C869ADF07439457EBF5F9AA09640799C /* Build configuration list for PBXNativeTarget "Pods-qollie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F97534507404CE45545A17BDF46BD68 /* Debug */,
+				AE6F99302A850A5FED46E61C63175A51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

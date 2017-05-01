@@ -1,0 +1,6 @@
+framework module Pods_qollieShare {
+  umbrella header "Pods-qollieShare-umbrella.h"
+
+  export *
+  module * { export * }
+}
