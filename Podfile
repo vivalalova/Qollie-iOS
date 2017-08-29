@@ -10,6 +10,7 @@ target 'qollie' do
   # Pods for qollie
   pod 'Firebase/AdMob'
   pod 'Firebase/Core'
+  pod 'Google-Mobile-Ads-SDK'
 
 end
 

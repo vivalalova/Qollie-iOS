@@ -16,7 +16,7 @@
 		9E23BACA1E63582D006434B1 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E23BAC91E63582D006434B1 /* ShareViewController.swift */; };
 		9E23BACD1E63582D006434B1 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E23BACB1E63582D006434B1 /* MainInterface.storyboard */; };
 		9E23BAD11E63582D006434B1 /* qollieShare.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9E23BAC71E63582D006434B1 /* qollieShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		9E548B1D1F55D10B0001F47A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9EE0F5A71F55D0980093E82A /* GoogleService-Info.plist */; };
+		9E548B1F1F55D8660001F47A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E548B1E1F55D8500001F47A /* GoogleService-Info.plist */; };
 		9E812A701E6990E90036F3FE /* lib.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E812A6E1E6990E90036F3FE /* lib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9E812A731E6990E90036F3FE /* lib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E812A6C1E6990E90036F3FE /* lib.framework */; };
 		9E812A741E6990E90036F3FE /* lib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9E812A6C1E6990E90036F3FE /* lib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -84,6 +84,7 @@
 		9E23BAC91E63582D006434B1 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		9E23BACC1E63582D006434B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		9E23BACE1E63582D006434B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E548B1E1F55D8500001F47A /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9E812A6C1E6990E90036F3FE /* lib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = lib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E812A6E1E6990E90036F3FE /* lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lib.h; sourceTree = "<group>"; };
 		9E812A6F1E6990E90036F3FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -93,7 +94,6 @@
 		9E812AB01E6C0A7C0036F3FE /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/MainInterface.strings"; sourceTree = "<group>"; };
 		9E812AB61E6C0B2E0036F3FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		9E812AB81E6C0B340036F3FE /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		9EE0F5A71F55D0980093E82A /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C43902D9AF0B5C43693ECB50 /* Pods-qollie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qollie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-qollie/Pods-qollie.debug.xcconfig"; sourceTree = "<group>"; };
 		FEEA1DC301118E11E32F097C /* Pods-qollieShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qollieShare.release.xcconfig"; path = "Pods/Target Support Files/Pods-qollieShare/Pods-qollieShare.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -171,7 +171,7 @@
 		9E23BAB01E6357F1006434B1 /* qollie */ = {
 			isa = PBXGroup;
 			children = (
-				9EE0F5A71F55D0980093E82A /* GoogleService-Info.plist */,
+				9E548B1E1F55D8500001F47A /* GoogleService-Info.plist */,
 				9E23BAB11E6357F1006434B1 /* AppDelegate.swift */,
 				9E23BAB31E6357F1006434B1 /* ViewController.swift */,
 				9E23BAB51E6357F1006434B1 /* Main.storyboard */,
@@ -339,7 +339,7 @@
 			files = (
 				9E23BABC1E6357F1006434B1 /* LaunchScreen.storyboard in Resources */,
 				9E812AB41E6C0B2E0036F3FE /* Localizable.strings in Resources */,
-				9E548B1D1F55D10B0001F47A /* GoogleService-Info.plist in Resources */,
+				9E548B1F1F55D8660001F47A /* GoogleService-Info.plist in Resources */,
 				9E23BAB91E6357F1006434B1 /* Assets.xcassets in Resources */,
 				9E23BAB71E6357F1006434B1 /* Main.storyboard in Resources */,
 			);
