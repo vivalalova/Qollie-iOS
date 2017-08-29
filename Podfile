@@ -8,6 +8,8 @@ target 'qollie' do
   pod 'Crashlytics'
   pod 'Localize-Swift'
   # Pods for qollie
+  pod 'Firebase/AdMob'
+  pod 'Firebase/Core'
 
 end
 
